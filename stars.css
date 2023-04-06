@@ -2,6 +2,10 @@ body {
     background-color: #000;
 }
 
+.bg-body {
+    background-color: transparent !important;
+}
+
 .stars {
     position: fixed;
     top: 50%;
@@ -21,4 +25,8 @@ body {
     100%{
         transform: scale(1.3);
     }
+}
+
+.row {
+    margin-right: 0px;
 }
