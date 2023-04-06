@@ -1,0 +1,14 @@
+* {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+
+.carousel-item img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(50%);
+}
