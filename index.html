@@ -19,7 +19,14 @@
     <nav class="navbar navbar-expand-md navbar-white bg-black">
         <div class="container">
   
-          <a class="navbar-brand" href="#"><img src="images/spaceman.png" style="width: 70px; height: 70px;"/></a>
+          <a class="navbar-brand" href="#">
+            <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title=":)">
+                <img src="images/spaceman.png" style="width: 70px; height: 70px;"/>
+            </span>
+          </a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <span class="navbar-toggler-icon"></span>
@@ -42,19 +49,63 @@
             <container class="col-md-5" ></container>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Looking for something?"/>
-              <button class="btn btn-dark btn-outline-light" type="submit" id="look_for">
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Click to search!">
+              <button type="button" class="btn btn-primary btn-dark btn-outline-light" data-bs-toggle="modal" data-bs-target="#reflectionsModal">
                 Search
               </button>
+            </span>
             </form>
           </div>
-  
         </div>
-      </nav>
 
-      <div class="col-sm-10 col-md-4 bg-body bg-gradient carousel-area" style="margin-left: 10%; margin-top: 5%;">
+          <div class="modal fade"
+        id="reflectionsModal"
+        tabindex="-1"
+        aria-labelledby="reflectionsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="reflectionsModalLabel">
+                        Actually...
+                    </h5>
+                    <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-dark">
+                        You aren't allowed to search anything.
+                    </p>
+                    <p class="text-dark">
+                        Maybe try again in the future?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                        Escape!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  
+      </nav>
+      
+      <div class="row" style="margin-top: 5%;">
+      <div class="col col-sm-10 col-md-5 bg-body carousel-area" style="margin-left: 10%;">
         <div
             id="course_carousel"
-            class="carousel carousel-light slide"
+            class="carousel slide"
             data-bs-ride="carousel"
             data-bs-interval="6000">
             <div class="carousel-indicators">
@@ -139,6 +190,88 @@
                     Next
                 </span>
             </button>
+        </div>
+      </div>
+            
+      <!-- accordian -->
+      <div class="col col-sm-12 col-lg-4  accordion-area">
+        <div class="accordion" id="accordianProjects">
+          <!-- FIGURATIVE LANGUAGE -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button
+                        class="accordion-button bg-dark text-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Figurative Language
+                    </button>
+                </h2>
+                <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="Figurative Language"
+                    data-bs-parent="#accordianProjects">
+                    <div class="accordion-body text-dark">
+                      This Figurative Language page was only one page from a large group project. To be used by a teacher at Mt. Vernon schools. 
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAWS PANTRY -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button
+                      class="accordion-button bg-dark text-light"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo">
+                      Paws Pantry Project
+                  </button>
+              </h2>
+              <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="Paws Pantry Project"
+                  data-bs-parent="#accordianProjects">
+                  <div class="accordion-body text-dark">
+                    The Paws Pantry Project is a semester-long project that the ACC is tackling. We are all having a great time working and learning together.
+                  </div>
+              </div>
+          </div>
+
+          <!-- CRUD -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button
+                    class="accordion-button bg-dark text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree">
+                    C.R.U.D. Midterm Project
+                </button>
+            </h2>
+            <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="C.R.U.D. Midterm Project"
+                data-bs-parent="#accordianProjects">
+                <div class="accordion-body text-dark">
+                  For my JavaScript midterm, I was tasked with creating a CRUD application. That is, an application that can Create, Read, Update, or Delete objects from a class. 
+                </div>
+            </div>
+        </div>
+                </div>
+                </div>
+              </div>
+              
+                
 
 </body>
 </html>
