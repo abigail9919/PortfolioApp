@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     <link rel="stylesheet" href="stars.css">
     <link rel="stylesheet" href="portfolio.css">
+    <script src="stars.js" defer></script>
     <title>Abigail's Portfolio</title>
 </head>
 <body>
@@ -23,7 +24,8 @@
             <span
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
-                title=":)">
+                title="Click me for a secret message!"
+                id="liveToastBtn">
                 <img src="images/spaceman.png" style="width: 70px; height: 70px;"/>
             </span>
           </a>
@@ -59,6 +61,19 @@
             </span>
             </form>
           </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast text-dark" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-info">
+            <strong class="me-auto">Spaceman Sam</strong>
+            <small>Just Now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Hello!"></button>
+            </div>
+            <div class="toast-body">
+            Hello, user! :)
+            </div>
+        </div>
         </div>
 
           <div class="modal fade"
@@ -218,7 +233,8 @@
                     aria-labelledby="Figurative Language"
                     data-bs-parent="#accordianProjects">
                     <div class="accordion-body text-dark">
-                      This Figurative Language page was only one page from a large group project. To be used by a teacher at Mt. Vernon schools. 
+                        <p class="text-dark">This Figurative Language page is one part of a larger project that my team and I created. To view the rest of this site, please scan the QR code.</p>
+                        <img src="images/figurative.png" alt="QR Code">
                     </div>
                 </div>
             </div>
@@ -242,7 +258,9 @@
                   aria-labelledby="Paws Pantry Project"
                   data-bs-parent="#accordianProjects">
                   <div class="accordion-body text-dark">
-                    The Paws Pantry Project is a semester-long project that the ACC is tackling. We are all having a great time working and learning together.
+                    <p class="text-dark">The Paws Pantry Project is a semester-long project that the Applied Computing Club is working on. We are all having a great time working and learning together. 
+                        As this project is still on-going, the QR code does not link to a developed site. Instead, it will show you the wireframes our team created for the front-end portion of this project. </p>
+                        <img src="images/paws-design.png" alt="Paws QR Code">
                   </div>
               </div>
           </div>
@@ -266,7 +284,9 @@
                 aria-labelledby="C.R.U.D. Midterm Project"
                 data-bs-parent="#accordianProjects">
                 <div class="accordion-body text-dark">
-                  For my JavaScript midterm, I was tasked with creating a CRUD application. That is, an application that can Create, Read, Update, or Delete objects from a class. 
+                    <p class="text-dark">For my JavaScript midterm, I was tasked with creating a CRUD application. That is, an application that can Create, Read, Update, or Delete objects from a class. 
+                        The following QR code will lead you to this project for viewing, but be warned: it does not look the best on mobile.</p>
+                        <img src="images/crud.png" alt="CRUD QR Code">
                 </div>
             </div>
         </div>
